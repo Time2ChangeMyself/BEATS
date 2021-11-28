@@ -1,0 +1,26 @@
+.menu {
+  display: flex;
+  
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__item {
+    display: flex;
+    font-size: 18px;
+    font-weight: normal;
+    
+    &:hover {
+      .menu__link {
+        color: red;
+      }
+    }
+    
+ }
+ 
+ &__link {
+   transition: 0.75s;
+  }
+}

@@ -1,0 +1,28 @@
+.benefits-section {
+  min-height: 650px;
+  height: 100vh;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 5%;
+      bottom: -4%;
+      border: 18px solid transparent;
+      border-bottom: 36px solid #E01F3D;
+      border-top: 0;
+      transform: rotateZ(225deg);
+      width: 0px;
+      height: 0px;
+      
+    }
+  }
+}

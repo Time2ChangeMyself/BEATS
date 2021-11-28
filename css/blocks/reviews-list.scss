@@ -1,0 +1,32 @@
+.reviews-list {
+  display: flex;
+  justify-content: center; 
+  gap: 6px;
+
+  &__item {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%; 
+    border: 5px solid transparent;
+    overflow: hidden;
+    
+    &_active {
+      border: 5px solid #E01F3D;
+      
+    } 
+    
+  }
+
+  &__link {
+    // зачем вешать абсолют на ссылку?
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+}

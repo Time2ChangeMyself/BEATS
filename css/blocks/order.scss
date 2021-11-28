@@ -1,0 +1,14 @@
+.order {
+  min-height: 650px;
+  height: 100vh;
+  background: #181818;
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 80px 80px;
+    align-items: center;
+    height: 100%;
+  }
+}

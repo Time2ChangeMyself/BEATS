@@ -1,0 +1,25 @@
+.benefit {
+  text-align: center;
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__image_wrap {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: $background-color;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

@@ -1,0 +1,13 @@
+.title-h1 {
+  font-family: $baseFontFamily;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.08;
+  text-transform: uppercase;
+  color: $black;
+  
+
+  &_white {
+    color: white;
+  }
+}

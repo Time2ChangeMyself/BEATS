@@ -1,0 +1,19 @@
+.benefits {
+  display: flex;
+  gap: 8%;
+
+  &__item {
+  flex: 1;
+  position: relative;
+
+  &:not(:last-of-type)::before {
+    content: url("../img/three-dots.svg");
+    position: absolute;
+    top: 20%;
+    left: 86%;
+    transform: translateX(50%);
+  }
+    
+  } 
+
+}

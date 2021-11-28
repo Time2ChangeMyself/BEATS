@@ -1,0 +1,16 @@
+.feature {
+  display: flex;
+  gap: 15px;
+  
+  &__icon {
+    width: 50px;
+  }
+  
+  &__text {
+    max-width: 110px;
+    font-family: $baseFontFamily;
+    font-size: $baseFontSize;
+    color: $black;
+    line-height: 1.125;
+  }
+}

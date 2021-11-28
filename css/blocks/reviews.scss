@@ -1,0 +1,36 @@
+.reviews {
+  min-height: 650px;
+  height: 100vh;
+  background-color: white;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+    padding: 80px 60px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background: #868686;
+      border-radius: 50%;
+      left: 2%;
+      bottom: -20px;
+    }
+
+  }
+
+  &__title-h1 {
+    position: relative;
+    // z-index: 5;
+  }
+
+  
+  
+}

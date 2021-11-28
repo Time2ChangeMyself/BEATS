@@ -1,0 +1,14 @@
+.contacts {
+  font-style: normal;
+  font-family: $baseFontFamily;
+  font-size: 18px;
+  font-weight: normal;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url('../img/phone-icon.svg');
+  }
+} 

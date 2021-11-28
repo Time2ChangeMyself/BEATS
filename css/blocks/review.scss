@@ -1,0 +1,41 @@
+.review {
+  display: flex;
+  background: $background-color;
+  padding: 42px;
+  gap: 40px;
+  position: relative;
+  overflow: hidden;
+  // z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background-color: white;
+    left:50%;
+    top: -60px;
+    transform: translate(-50%);
+    // z-index: 2;
+  }
+
+  &__image_wrap {
+    width: 253px;
+    height: 264px;
+  }
+
+  &__avatar {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 52%;
+  }
+  
+}
