@@ -5,7 +5,8 @@
   &__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 70px;
     padding: 100px;
     align-items: center;
     position: relative;
