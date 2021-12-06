@@ -182,7 +182,7 @@ img {
     height: 21.875rem;
     content: "";
     margin-bottom: 3.75rem;
-    background: url("../../img/main-bg-768.png") center center/contain no-repeat;
+    background: url("../img/main-bg-768.png") center center/contain no-repeat;
   }
 }
 .hero__title-h1 {
@@ -1088,25 +1088,25 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../../img/socials/vk.svg) no-repeat center center/contain;
+  background: url(../img/socials/vk.svg) no-repeat center center/contain;
 }
 .social__link-fb {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../../img/socials/f.svg) no-repeat center center/contain;
+  background: url(../img/socials/f.svg) no-repeat center center/contain;
 }
 .social__link-inst {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../../img/socials/in.svg) no-repeat center center/contain;
+  background: url(../img/socials/in.svg) no-repeat center center/contain;
 }
 .social__link-tg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../../img/socials/tv.svg) no-repeat center center/contain;
+  background: url(../img/socials/tv.svg) no-repeat center center/contain;
 }
 
 .footer {
