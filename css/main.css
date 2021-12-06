@@ -319,8 +319,8 @@ img {
 }
 
 .humburger {
-  width: 26px;
-  height: 25px;
+  width: 1.625rem;
+  height: 1.5625rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -341,7 +341,7 @@ img {
 .humburger__plank {
   display: block;
   background: black;
-  height: 5px;
+  height: 0.3125rem;
   border-radius: 5px;
 }
 
@@ -1037,11 +1037,11 @@ img {
 }
 
 .location {
-  max-height: 650px;
+  max-height: 40.625rem;
 }
 @media screen and (max-width: 768px) {
   .location {
-    max-height: 526px;
+    max-height: 32.875rem;
   }
 }
 .location__container {
@@ -1062,7 +1062,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 10px;
+  gap: 0.625rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

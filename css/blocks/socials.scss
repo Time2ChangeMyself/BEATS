@@ -1,7 +1,7 @@
 .socials {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: rem(10px);
   align-items: center;
 
   &__item {

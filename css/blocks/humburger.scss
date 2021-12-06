@@ -1,6 +1,6 @@
 .humburger {
-  width: 26px;
-  height: 25px;
+  width: rem(26px);
+  height: rem(25px);
   flex-direction: column;
   justify-content: space-between;
   display: none;
@@ -14,7 +14,7 @@
   &__plank {
     display: block;
     background:black;
-    height: 5px;
+    height: rem(5px);
     border-radius: 5px;
   }
 }

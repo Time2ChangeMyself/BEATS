@@ -1,8 +1,8 @@
 .location {
-  max-height: 650px;
+  max-height: rem(650px);
   
   @include tablets {
-    max-height: 526px;
+    max-height: rem(526px);
   }
   
 
