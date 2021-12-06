@@ -3,7 +3,7 @@
   align-items: center;
   cursor: pointer;
   user-select: none;
-  gap: 10px;
+  gap: rem(10px);
 
   &__elem {
     display: none;
@@ -13,11 +13,16 @@
         display: block;
       }
     }
+
+    &:checked ~ .radio__visible_checkbox > .radio__check-mark {
+      display: block;
+    }
+
   }
 
-  &__visible {
-    width: 25px;
-    height: 25px;
+  &__visible, &__visible_checkbox {
+    width: rem(25px);
+    height: rem(25px);
     position: relative;
     background-color: white;
     border-radius: 50%;
@@ -26,8 +31,8 @@
       content: "";
       display: none;
       position: absolute;
-      width: 13px;
-      height: 13px;
+      width: rem(13px);
+      height: rem(13px);
       border-radius: 50%;
       background-color: red;
       top: 50%;
@@ -47,12 +52,22 @@
 
   &_checkbox {
 
-    .radio__visible {
+    .radio__visible_checkbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border-radius: 0;
       
-      &::before {
-        background: url("../img/check-mark.svg") center center no-repeat;
-      }
+      // &::before {
+      //   background: url("../img/check-mark.svg") center center no-repeat;
+      // }
     }
+  }
+
+  &__check-mark {
+    display: none;
+    width: rem(10px);
+    height: rem(10px);
+    fill:red;
   }
 }

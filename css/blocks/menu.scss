@@ -1,16 +1,26 @@
 .menu {
   display: flex;
   
+
+  @include tablets {
+    display: none;
+  }
+  
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 28px;
+    gap: rem(28px);
+    row-gap: rem(2px);
   }
 
   &__item {
     display: flex;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: normal;
+    white-space: nowrap;
+
     
     &:hover {
       .menu__link {

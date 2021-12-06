@@ -1,28 +1,43 @@
 .benefits-section {
-  min-height: 650px;
+  min-height: rem(650px);
   height: 100vh;
+
+  @include tablets{
+    min-height: rem(1000px); 
+  }
+
+  @include phone {
+    min-height: rem(800px);
+  }
 
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 70px;
-    padding: 100px;
+    gap: rem(40px);
+    padding: 11% 0 11% 0;
     align-items: center;
     position: relative;
     height: 100%;
+
+    @include phone {
+      justify-content: center;
+      padding: 8% 0;
+      gap: 10%;
+      width: 100%;
+    }
     
     &::before {
       content: "";
       position: absolute;
       left: 5%;
       bottom: -4%;
-      border: 18px solid transparent;
-      border-bottom: 36px solid #E01F3D;
+      border: rem(18px) solid transparent;
+      border-bottom: rem(36px) solid #E01F3D;
       border-top: 0;
       transform: rotateZ(225deg);
-      width: 0px;
-      height: 0px;
+      width: rem(0px);
+      height: rem(0px);
       
     }
   }

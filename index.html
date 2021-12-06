@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="кг">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +15,10 @@
         <div class="container hero__container">
           <header class="header">
             <div class="header__right">
-              <a href="#" class="logo">
-                <img src="./img/beats.png" alt="logo" class="logo__img">
+              <a href="#" class="logo header__logo">
+                <svg class="logo__img">
+                  <use xlink:href="./img/sprite.svg#logo"></use>
+                </svg>
               </a>
               <nav class="menu">
                 <ul class="menu__list">
@@ -30,28 +32,47 @@
                 </ul>
               </nav>
             </div>
-            <address class="contacts">
-              <!-- ::after { icon} -->
+            <address class="contacts header__contacts">
+              <svg class="contacts__phone-icon">
+                <use xlink:href="./img/sprite.svg#phone-icon"></use>
+              </svg>
               <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
             </address>
+            <a href="#" class="humburger">
+              <span class="humburger__plank"></span>
+              <span class="humburger__plank"></span>
+              <span class="humburger__plank"></span>
+            </a>
           </header>
           <div class="hero__title-section">
-            <h1 class="hero__title-h1 title-h1">Беспроводные наушники Beats Solo 3</h1>
+            <h1 class="hero__title-h1 title-h1">Беспроводные наушники Beats Solo&nbsp3</h1>
             <h4 class="hero__subtitle">Встречайте новую версию наушников из линейки Powerbeats.</h4>
             <a href="#" class="hero__purchase-btn purchase-btn">Заказать</a>
           </div>
           <div class="hero__icons-section">
             <ul class="features">
               <li class="features-item feature">
-               <div class="feature__icon"><img class="icon" src="./img/feature__icon-1.svg" alt="icon"></div> 
+               <div class="feature__icon">
+                 <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#feature__icon-1"></use>
+                  </svg>
+                </div> 
                <div class="feature__text">Безупречный звук</div> 
               </li>
               <li class="features-item feature">
-               <div class="feature__icon"><img  class="icon" src="./img/feature__icon-2.svg" alt="icon"></div> 
+               <div class="feature__icon">
+                 <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#feature__icon-2"></use>
+                 </svg>
+               </div> 
                <div class="feature__text">До 40 часов работы</div> 
               </li>
               <li class="features-item feature">
-               <div class="feature__icon"><img class="icon" src="./img/feature__icon-3.svg" alt="icon"></div> 
+               <div class="feature__icon">
+                 <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#feature__icon-3"></use>
+                 </svg>
+                </div> 
                <div class="feature__text">Технология Fast Fuel </div> 
               </li>
             </ul>
@@ -63,7 +84,7 @@
       <section class="benefits-section">
         <div class="container benefits-section__container">
           <div class="headline">
-            <h1 class="headline__title-h1 title-h1">почему beats solo 3?</h1> 
+            <h1 class="headline__title-h1 title-h1">почему beats solo&nbsp3?</h1> 
             <div class="headline__desc desc">Процессор W1 работает невероятно эффективно и позволяет легко 
               подключать наушники к различным устройствам Apple.
             </div>
@@ -72,7 +93,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrap">
-                  <img src="./img/benefit_icon-1.svg" alt="icon" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./img/sprite.svg#benefit_icon-1"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -89,7 +112,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrap">
-                  <img src="./img/benefit_icon-2.svg" alt="icon" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./img/sprite.svg#benefit_icon-2"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -107,7 +132,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrap">
-                  <img src="./img/benefit_icon-3.svg" alt="icon" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./img/sprite.svg#benefit_icon-3"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -228,7 +255,11 @@
               <div class="form__controls">
               <label  class="radio radio_checkbox">
                 <input type="checkbox" class="radio__elem">
-                <div class="radio__visible"></div>
+                <div class="radio__visible_checkbox">
+                  <svg class="radio__check-mark">
+                    <use xlink:href="./img/sprite.svg#check-mark"></use>
+                  </svg>
+                </div>
                 <div class="radio__title">Не перезванивать</div>
               </label>
               </div>
@@ -240,9 +271,38 @@
           </form>
         </div>
       </section>
+      <!-- НАЧАЛО СЕКЦИИ contacts-->
+      <section class="location">
+        <div class="container location__container">
+          <img src="./img/map.png" alt="map" class="location__map">
+        </div>
+      </section>
     </div>
-
-    <footer class="footer">
+    <footer class="footer"> 
+      <div class="container footer__container">
+        <adress class="footer__contacts contacts">
+          <div class="contacts__adress">Москва, ул.Новый Арбат, д.31/12</div>
+          <svg class="contacts__phone-icon">
+            <use xlink:href="./img/sprite.svg#phone-icon"></use>
+          </svg>
+          <a href="" class="contacts__phone">8 800 903 90 90</a>
+        </adress>
+        <ul class="socials">
+          <li class="socials__item social">
+            <a href="" class="social__link-vk"></a>
+          </li>
+          <li class="socials__item social socials__item_active">
+            <a href="" class="social__link-fb"></a>
+          </li>
+          <li class="socials__item social">
+            <a href="" class="social__link-inst"></a>
+          </li>
+          <li class="socials__item social">
+            <a href="" class="social__link-tg"></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">

@@ -1,19 +1,48 @@
 .benefits {
   display: flex;
-  gap: 8%;
+  justify-content: space-between;
+  gap:5%;
+
+  @include tablets {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: rem(15px);
+  }
+
+  @include phone {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 11%;
+    width: 95%;
+
+  }
 
   &__item {
   flex: 1;
   position: relative;
+  max-width: rem(243px);
+
+   @include phone {
+     max-width: none;
+     display: flex;
+     align-items: center;
+     gap: 4%;
+     justify-content: space-between;
+  }
 
   &:not(:last-of-type)::before {
     content: url("../img/three-dots.svg");
     position: absolute;
-    top: 20%;
-    left: 86%;
-    transform: translateX(50%);
+    top: rem(55px);
+    left: 102%;
+    transform: translateX(-30%);
+
+    @include tablets {
+      display: none;
+    }
   }
     
   } 
 
-}
+} 

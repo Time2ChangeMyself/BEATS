@@ -1,14 +1,17 @@
 .headline {
-  margin-bottom: 62px;
   text-align: center;
 
   &__title-h1 {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 
   }
 
   &__desc {
   padding: 0 18%;
+
+  @include phone {
+    padding: 0 5%;
+  }
 
   }
 }

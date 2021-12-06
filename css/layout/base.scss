@@ -1,11 +1,18 @@
 html, body {
   height: 100%;
+  font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phone {
+    font-size: $baseFontSize - 2px;
+  }
 }
 
 body {
   font-family: 'Alegreya Sans', 'Arial', sans-serif;
-  
-  font-size: $baseFontSize;
   line-height: 1.42;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -43,8 +50,8 @@ ul li {
 }
 
 h1, h2, h3, h3, h4, h5, h6, p {
-  padding: 0px;
-  margin: 0px 0px;
+  padding: rem(0px);
+  margin: rem(0px) rem(0px);
   font-weight: normal;
 }
 
@@ -54,13 +61,13 @@ img {
 }
 
 .container {
-  width: $containerWidth;
+  width:95%;
+  max-width: $containerWidth;
   margin: 0 auto;
 }
 
 .wrapper {
   overflow: hidden;
-  min-width: $containerWidth+20px;
   min-height: 100%;
   display: flex;
   flex-direction: column;

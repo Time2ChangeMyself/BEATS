@@ -1,0 +1,35 @@
+.social {
+  display: block;
+
+  &__link-vk {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../../img/socials/vk.svg) no-repeat center center / contain;
+  }
+
+
+  &__link-fb {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background: url(../../img/socials/f.svg) no-repeat center center/ contain;
+  }
+
+
+  &__link-inst {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../../img/socials/in.svg) no-repeat center center/ contain;
+  }
+
+
+  &__link-tg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../../img/socials/tv.svg) no-repeat center center/ contain;
+  }
+}

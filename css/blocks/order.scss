@@ -1,15 +1,29 @@
 .order {
-  min-height: 650px;
+  min-height: rem(650px);
   height: 100vh;
   background: #181818;
+
+  @include tablets {
+    min-height: rem(1000px);
+  }
+
+
+  @include phone {
+    min-height: rem(900px);
+  }
   
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 60px;
-    padding: 70px 80px 80px;
+    gap: rem(60px);
+    padding: rem(70px) rem(80px) rem(80px);
     align-items: center;
     height: 100%;
+
+    @include phone {
+      padding: 0;
+    }
+    
   }
 }

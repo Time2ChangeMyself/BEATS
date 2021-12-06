@@ -6,6 +6,12 @@ $background-color:#F8FAF9;
 $baseFontFamily:'Play', 'Arial', 'san-serif';
 $z-fixed-menu:100;
 
+
+//breakpoints
+$tablets :768px;
+$phone:480px;
+
+@import './media.scss';
 //layout + container + wrapper
 @import './layout/base.scss';
 @import url('./layout/fonts.css');
@@ -16,6 +22,7 @@ $z-fixed-menu:100;
 @import './blocks/logo.scss';
 @import './blocks/menu.scss';
 @import './blocks/contacts.scss';
+@import './blocks/humburger.scss';
 @import './blocks/title-h1.scss';
 @import './blocks/purchase-btn.scss';
 @import './blocks/features.scss';
@@ -34,6 +41,11 @@ $z-fixed-menu:100;
 @import './blocks/order.scss';
 @import './blocks/form.scss';
 @import './blocks/radio.scss';
+@import './blocks/location.scss';
+@import './blocks/socials.scss';
+@import './blocks/social.scss';
+
+@import './blocks/footer.scss';
 @import './blocks/fixed-menu.scss';
 
 

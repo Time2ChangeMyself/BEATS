@@ -1,0 +1,47 @@
+.footer {
+  min-height: rem(86px);
+  display: flex;
+  align-items: center;
+
+  @include phone {
+    min-height: rem(160px);
+  }
+
+  
+  
+  
+  &__container {
+    padding:  1% 1% 1% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phone {
+      flex-direction:column;
+      justify-content:center;
+      gap:rem(20px);
+    }
+  }
+
+
+  &__contacts  {
+
+    @include phone {
+      text-align: center;
+    }
+
+    .contacts__phone { 
+
+    @include tablets {
+      color: red;
+    }
+
+    @include phone {
+      justify-content: center;
+      color: black;
+    }
+
+  }
+  
+  }
+}

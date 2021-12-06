@@ -2,11 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 44px;
+  gap: 5%;
 
   &__right {
     display: flex;
-    gap: 37px;
+    gap: rem(25px);
+  }
+
+  &__logo {
+    align-self: center;
+  }
+
+  &__contacts.contacts {
+
+    @include tablets {
+      display: none;
+    }
   }
   
 }

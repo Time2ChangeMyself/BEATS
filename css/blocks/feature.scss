@@ -1,13 +1,13 @@
 .feature {
   display: flex;
-  gap: 15px;
+  gap: rem(15px);
   
   &__icon {
-    width: 50px;
+    width: rem(50px);
   }
   
   &__text {
-    max-width: 110px;
+    max-width: rem(110px);
     font-family: $baseFontFamily;
     font-size: $baseFontSize;
     color: $black;
