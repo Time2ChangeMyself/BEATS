@@ -1,7 +1,12 @@
 .footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
   min-height: rem(86px);
   display: flex;
   align-items: center;
+  width: 100%;
+  background-color: white;
 
   @include phone {
     min-height: rem(160px);
