@@ -1259,7 +1259,7 @@ img {
       flex-shrink: 1;
   width: 100%;
   height: 100%;
-  background: url("../../img/product__image-1100.png") center center/contain no-repeat;
+  background: url("../img/product__image-1100.png") center center/contain no-repeat;
 }
 .product__description {
   height: 100%;
@@ -1479,6 +1479,66 @@ img {
   color: white;
 }
 
+.modal__close {
+  display: none;
+}
+.modal__menu {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 40.625rem;
+    background-color: #313131;
+  }
+  .modal__container {
+    height: 100%;
+    position: relative;
+    padding: 8.4375rem 6.25rem;
+  }
+  .modal__close {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: white;
+    width: 20px;
+    height: 20px;
+  }
+  .modal__close:hover .modal__cross {
+    fill: red;
+  }
+  .modal__cross {
+    height: 100%;
+    width: 100%;
+    fill: white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .modal__menu {
+    display: block;
+    color: white;
+  }
+  .modal__menu .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .modal__menu .menu__item {
+    font-size: 2.25rem;
+  }
+}
+
 .footer {
   position: absolute;
   bottom: 0px;
@@ -1584,64 +1644,4 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.modal__close {
-  display: none;
-}
-.modal__menu {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    min-height: 40.625rem;
-    background-color: #313131;
-  }
-  .modal__container {
-    height: 100%;
-    position: relative;
-    padding: 8.4375rem 6.25rem;
-  }
-  .modal__close {
-    display: block;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    color: white;
-    width: 20px;
-    height: 20px;
-  }
-  .modal__close:hover .modal__cross {
-    fill: red;
-  }
-  .modal__cross {
-    height: 100%;
-    width: 100%;
-    fill: white;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  .modal__menu {
-    display: block;
-    color: white;
-  }
-  .modal__menu .menu__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 1.25rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .modal__menu .menu__item {
-    font-size: 2.25rem;
-  }
 }
