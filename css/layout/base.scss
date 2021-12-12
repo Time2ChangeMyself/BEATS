@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  font-family: 'Alegreya Sans', 'Arial', sans-serif;
+  font-family: $baseFontFamily;
   line-height: 1.42;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;

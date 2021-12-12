@@ -1,0 +1,19 @@
+.product-feature {
+  font-size: $baseFontSize;
+  font-family: $baseFontFamily;
+  color: #666666;
+  line-height: 1.16;
+  font-weight: normal;
+  font-style: normal;
+  
+  &__name {
+    margin-bottom: rem(10px);
+  }
+
+  &__value {
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+  }
+
+}

@@ -1,0 +1,18 @@
+.title-h2 {
+
+  font-family: $baseFontFamily;
+  font-size: rem(36px);
+  font-weight: bold;
+  line-height: 1.08;
+  text-transform: uppercase;
+  color: $black;
+  
+  @include tablets {
+    font-size: rem(30px);
+  }
+
+
+  &_white {
+    color: white;
+  }
+}
