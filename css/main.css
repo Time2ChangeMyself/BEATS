@@ -1124,6 +1124,7 @@ img {
   min-height: 40.625rem;
   height: 100vh;
   background: #F8FAF9;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .products {
@@ -1133,6 +1134,11 @@ img {
 @media screen and (max-width: 480px) {
   .products {
     min-height: 50rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products__arrow.arrow {
+    display: none;
   }
 }
 .products__container {
@@ -1150,31 +1156,6 @@ img {
 @media screen and (max-width: 768px) {
   .products__container {
     width: 100%;
-  }
-}
-.products__container::before {
-  content: "<";
-  cursor: pointer;
-  width: 1.875rem;
-  height: 1.875rem;
-  font-size: 50px;
-  margin-right: 0.9375rem;
-}
-@media screen and (max-width: 768px) {
-  .products__container::before {
-    display: none;
-  }
-}
-.products__container::after {
-  content: ">";
-  cursor: pointer;
-  width: 1.875rem;
-  height: 1.875rem;
-  font-size: 50px;
-}
-@media screen and (max-width: 768px) {
-  .products__container::after {
-    display: none;
   }
 }
 .products__slider {
@@ -1197,6 +1178,20 @@ img {
   width: 100%;
 }
 
+.arrow {
+  display: block;
+  cursor: pointer;
+  width: 1.875rem;
+  height: 1.875rem;
+  font-size: 3.125rem;
+}
+.arrow_left {
+  margin-right: 0.9375rem;
+}
+.arrow_right {
+  margin-left: 0.9375rem;
+}
+
 .product {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1217,6 +1212,32 @@ img {
             flex-direction: column;
   }
 }
+.product__arrow.arrow_left {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .product__arrow.arrow_left {
+    font-size: 2.5rem;
+    display: block;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    text-align: right;
+  }
+}
+.product__arrow.arrow_right {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .product__arrow.arrow_right {
+    font-size: 2.5rem;
+    display: block;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    text-align: left;
+  }
+}
 .product__image-wrap {
   width: 49%;
   height: 100%;
@@ -1232,26 +1253,6 @@ img {
             align-items: center;
     -ms-flex-negative: 1;
         flex-shrink: 1;
-  }
-  .product__image-wrap::before {
-    content: "<";
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-right: 0.9375rem;
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
-    text-align: right;
-  }
-  .product__image-wrap::after {
-    text-align: left;
-    content: ">";
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 0.9375rem;
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
   }
 }
 .product__image {

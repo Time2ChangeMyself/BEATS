@@ -8,6 +8,30 @@
     flex-direction: column;
   }
 
+  &__arrow.arrow_left {
+    display: none;
+    
+
+    @include tablets{
+      font-size: rem(40px);
+      display: block;
+      flex-grow: 2;
+      text-align: right;
+    }
+  }
+
+  &__arrow.arrow_right {
+    display: none;
+    
+
+    @include tablets{
+      font-size: rem(40px);
+      display: block;
+      flex-grow: 2;
+      text-align: left;
+    }
+  }
+
 
   &__image-wrap {
     width: 49%;
@@ -18,24 +42,7 @@
       display: flex;
       align-items: center;
       flex-shrink: 1;
-
-      &::before {
-        content: "<";
-        cursor: pointer;
-        font-size: rem(40px);
-        margin-right: rem(15px);
-        flex-grow: 2;
-        text-align: right;
-      }
-
-      &::after {
-        text-align: left;
-        content: ">";
-        cursor: pointer;
-        font-size: rem(40px);
-        margin-left: rem(15px);
-        flex-grow: 2;
-      }
+      
     }
 
   }

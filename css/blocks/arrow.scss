@@ -1,0 +1,16 @@
+.arrow {
+  display: block;
+  cursor: pointer;
+  width: rem(30px);
+  height: rem(30px);
+  font-size: rem(50px);
+  
+  &_left {
+    margin-right: rem(15px);
+    
+  }
+
+  &_right {
+    margin-left: rem(15px);
+  }
+}
