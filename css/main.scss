@@ -35,7 +35,7 @@ $phone:480px;
 @import './blocks/benefits.scss';
 @import './blocks/benefit.scss';
 @import './blocks/reviews.scss';
-@import './blocks/reviews-list.scss';
+@import './blocks/reviews-switcher.scss';
 @import './blocks/review.scss';
 @import './blocks/title-h4.scss';
 @import './blocks/order.scss';
@@ -56,7 +56,112 @@ $phone:480px;
 @import './blocks/fixed-menu.scss';
 
 
+.team {
+  min-height: rem(650px);
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
 
+  @include tablets {
+    min-height: rem(1000px);
+  }
+
+  @include phone {
+    min-height: rem(900px);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title-h1 {
+    margin-bottom: rem(53px);
+  }
+
+  &__list {
+    display: flex;
+    gap: 1%;
+
+    &_desktop {
+
+      & > .team__item > .team__content {
+        position: absolute;
+        top: 100%;
+      }
+      
+      @include tablets {
+        display: none;
+       
+      }
+
+    }
+
+    &_mobile {
+      display: none;
+
+      @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: rem(220px);
+        row-gap: rem(15px);
+      }
+    }
+  }
+  
+  &__item {
+    text-align: center;
+    max-width: 220px;
+    position: relative;
+  }
+
+  &__image-wrap {
+    margin-bottom: rem(25px);
+  }
+
+  &__image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: rem(18px);
+    font-weight: bold;
+    margin-bottom: rem(11px);
+    white-space: nowrap;
+  }
+
+  &__content {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  &__job {
+    font-weight: bold;
+  }
+
+  &__desc {
+    padding: 0 5%;
+  }
+} 
+
+.triangle {
+  transition: 0.5s;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border:5px solid transparent;
+  border-top-color:red ;
+
+  &_rotated {
+    transform: rotate(180deg);
+  }
+}
 
 
 
