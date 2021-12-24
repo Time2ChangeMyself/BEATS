@@ -2,7 +2,7 @@
   min-height: rem(650px);
   height: 100vh;
   background: #F8FAF9;
-  position: relative;
+  
 
   @include tablets{
     min-height: rem(1000px); 
@@ -12,12 +12,43 @@
     min-height: rem(800px);
   }
 
-  &__arrow.arrow {
-    
-    
+  &__arrow {
+
+    &.arrow_left {
+    position: absolute;
+    top: 47%;
+    left: -4%;
+    z-index: 10000;
+
     @include tablets {
-      display: none;
+      top: 20%;
+      left: 3%;
     }
+    @include phone {
+      left: -7%;
+
+    }
+
+    }
+
+    &.arrow_right {
+    position: absolute;
+    top: 47%;
+    right: -4%;
+    z-index: 10000;
+
+    @include tablets {
+      top: 20%;
+      right: 3%;
+    }
+
+    @include phone {
+      right: -7%;
+
+    }
+    }
+       
+    
   }
 
   
@@ -35,7 +66,14 @@
   }
 
   &__slider {
-    width: 90%;
+    width: 95%;
+    position: relative;
+    
+    .bx-wrapper {
+    box-shadow: none;
+    border:none;
+    background: transparent;
+    }
 
   }
 
@@ -44,6 +82,7 @@
     overflow: hidden;
     width: 100%;
     min-height: rem(650px);
+    gap: 5%;
 
     @include phone {
       min-height: rem(800px);

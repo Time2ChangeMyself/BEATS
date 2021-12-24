@@ -40,10 +40,28 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 82% ;
+    min-height: rem(350px);
+    overflow: hidden;
+    background: $background-color;
   }  
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+    height: 100%;
+
+  }
+
+  &__item.reviews__item_active {
+    position: static;
+    opacity: 1;
+
+  }
+  
   
 }

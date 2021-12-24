@@ -20,11 +20,13 @@
   &__icon-wrap {
     height: rem(25px);
     width:rem(25px);
+    margin-right: rem(5px);
   }
 
   &__icon {
     width: 100%;
     height: 100%;
+    fill: black;
   }
 
   &__name-wrap {

@@ -1,0 +1,44 @@
+.modal-ajax {
+  display: none;
+  
+  &_forId {
+    border-radius: 15px;
+  }
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background-color: #fff;
+    width: rem(300px);
+    height: rem(175px);
+  }
+  
+  &__content {
+    text-align: center;
+    font-size: rem(18px);
+    font-weight: normal;
+    line-height: 1.33;
+    margin-bottom: rem(18px);
+
+    &_error {
+      color: red;
+      font-weight: bold;
+    }
+
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+  } 
+}
+
+.fancybox-content {
+  padding: 0;
+}
+
+.fancybox-button {
+  display: none;
+}

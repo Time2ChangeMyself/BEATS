@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>BEATS</title>
 </head>
@@ -151,14 +153,110 @@
       <!-- НАЧАЛО СЕКЦИИ product-->
       <section class="products">
         <div class="container products__container">
-          <a href="" class="products__arrow arrow_left arrow">&lt;</a>
           <div class="products__slider">
+            <div class="products__arrows">
+              <a href="" class="products__arrow arrow_left arrow">&lt;</a>
+              <a href="" class="products__arrow arrow_right arrow">&gt;</a>
+            </div>
             <ul class="products__list">
               <li class="products__item product">
                 <div class="product__image-wrap">
-                  <a href="" class="product__arrow arrow_left arrow">&lt;</a>
-                  <div class="product__image"></div>
-                  <a href="" class="product__arrow arrow_right arrow">&gt;</a>
+                  <div class="product__image-1"></div>
+                </div>
+                <div class="product__description">
+                  <div class="product__dropdown">
+                    <div class="product__icon-wrap">
+                      <svg class="product__icon">
+                        <use xlink:href="./img/sprite.svg#specs"></use>
+                      </svg>
+                    </div>
+                    <div class="product__specification specification">
+                      <ul class="specification__list">
+                        <li class="specification__item">
+                          <div class="specification__name-wrap">
+                            <div class="specification__icon-wrap">
+                              <svg class="specification__icon">
+                                <use xlink:href="./img/sprite.svg#specification__icon-1"></use>
+                              </svg>
+                            </div>
+                            <div class="specification__name">Bluetooth</div>
+                          </div>
+                          <div class="specification__value">4.0</div>
+                        </li>
+                        <li class="specification__item">
+                          <div class="specification__name-wrap">
+                            <div class="specification__icon-wrap">
+                              <svg class="specification__icon">
+                                <use xlink:href="./img/sprite.svg#specification__icon-2"></use>
+                              </svg>
+                            </div>
+                            <div class="specification__name">Дальность </div>
+                          </div>
+                          <div class="specification__value">12.0</div>
+                        </li>
+                        <li class="specification__item">
+                          <div class="specification__name-wrap">
+                            <div class="specification__icon-wrap">
+                              <svg class="specification__icon">
+                                <use xlink:href="./img/sprite.svg#specification__icon-3"></use>
+                              </svg>
+                            </div>
+                            <div class="specification__name">Зарядка</div>
+                          </div>
+                          <div class="specification__value">3 ч</div>
+                        </li>
+                        <li class="specification__item">
+                          <div class="specification__name-wrap">
+                            <div class="specification__icon-wrap">
+                              <svg class="specification__icon">
+                                <use xlink:href="./img/sprite.svg#specification__icon-4"></use>
+                              </svg>
+                            </div>
+                            <div class="specification__name">Вес</div>
+                          </div>
+                          <div class="specification__value">215гр</div>
+                        </li>
+                        <li class="specification__item">
+                          <div class="specification__name-wrap">
+                            <div class="specification__icon-wrap">
+                              <svg class="specification__icon">
+                                <use xlink:href="./img/sprite.svg#specification__icon-5"></use>
+                              </svg>
+                            </div>
+                            <div class="specification__name">Гарантия</div>
+                          </div>
+                          <div class="specification__value">1 год</div>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                    <div class="product__title-h2 title-h2">beats solo 3. цвет «атласное серебро»</div>
+                    <div class="product__desc desc">
+                      <p>
+                        Беспроводные наушники Beats Solo3 готовы к работе в любой момент.
+                        Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
+                      </p>
+                    </div>
+                    <div class="product__features-wrap">
+                      <div class="product-feature">
+                        <div class="product-feature__name">Зарядка</div>
+                        <div class="product-feature__value">2  часа</div>
+                      </div>
+                      <div class="product-feature">
+                        <div class="product-feature__name">Вес</div>
+                        <div class="product-feature__value">215 грамм</div>
+                      </div>
+                    </div>
+                    <div class="product__price-wrap">
+                      <div class="product__price">14 990 ₽</div>
+                      <a href="#" class="product__purchase-btn purchase-btn">Заказать</a>
+                    </div>
+                </div>
+              </li>
+              <li class="products__item product">
+                <div class="product__image-wrap">
+                  <div class="product__image-2"></div>
                 </div>
                 <div class="product__description">
                   <div class="product__dropdown">
@@ -253,7 +351,6 @@
               </li>
             </ul>
           </div>
-          <a href="" class="products__arrow arrow_right arrow">&gt;</a>
 
         </div>
       </section>
@@ -359,7 +456,7 @@
         <div class="reviews__container container">
           <h1 class="reviews__title-h1 title-h1">отзывы</h1>
           <ul class="reviews__list">
-            <li class="reviews__item review">
+            <li class="reviews__item review reviews__item_active" data-linked="one">
               <div class="review__image-wrap">
                 <img src="./img/avatar-1.png" alt="avatar" class="review__image">
               </div>
@@ -375,20 +472,48 @@
                   <h4 class="review__title-h4 title-h4">Билли Айлиш</h4>
                 </article>
             </li>
+            <li class="reviews__item review" data-linked="two">
+              <div class="review__image-wrap">
+                <img src="./img/avatar-2.png" alt="avatar" class="review__image">
+              </div>
+                <article class="review__text">
+                  <h3 class="review__title-h3 title-h3">Крутой дизайн</h3>
+                  <div class="review__desc desc">
+                    <p>
+                      После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.  
+                    </p>
+                  </div>
+                  <h4 class="review__title-h4 title-h4">Вадим Грачев</h4>
+                </article>
+            </li>
+            <li class="reviews__item review" data-linked="three">
+              <div class="review__image-wrap">
+                <img src="./img/avatar-3.png" alt="avatar" class="review__image">
+              </div>
+                <article class="review__text">
+                  <h3 class="review__title-h3 title-h3">На долго хватает заряда</h3>
+                  <div class="review__desc desc">
+                    <p>
+                      Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус. 
+                    </p>
+                  </div>
+                  <h4 class="review__title-h4 title-h4">Мария Орлова</h4>
+                </article>
+            </li>
           </ul>
           <ul class="reviews-switcher">
             <li class="reviews-switcher__item reviews-switcher__item_active">
-              <a href="#" class="reviews-switcher__link">
+              <a href="#" class="reviews-switcher__link" data-open="one">
                 <img class="reviews-switcher__image" src="./img/avatar-1.png" alt="avatar">
               </a>
             </li>
             <li class="reviews-switcher__item">
-              <a href="#" class="reviews-switcher__link">
+              <a href="#" class="reviews-switcher__link" data-open="two">
                 <img class="reviews-switcher__image" src="./img/avatar-2.png" alt="avatar">
               </a>
             </li>
             <li class="reviews-switcher__item">
-              <a href="#" class="reviews-switcher__link">
+              <a href="#" class="reviews-switcher__link" data-open="three">
                 <img class="reviews-switcher__image" src="./img/avatar-3.png" alt="avatar">
               </a>
             </li>
@@ -401,15 +526,16 @@
         <div class="container order__container">
           <h1 class=" order__title-h1 title-h1 title-h1_white">закажите доставку</h1>
           <form class="form" action="">
+            <input type="hidden" name="to" value="somewhere@mail.com">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block" >
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text"  class="form__input" name="name">
                 </label>
                 <label class="form__block" >
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="phone">
                 </label>
               </div>
               <div class="form__row">
@@ -441,7 +567,7 @@
               <div class="form__row">
                 <label for="" class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea name="" id="" class="form__input form__input_textarea"> </textarea>
+                  <textarea name="comment"  class="form__input form__input_textarea"></textarea>
                 </label>
               </div>
               <div class="form__controls">
@@ -473,6 +599,16 @@
               </div>
             </div>
           </form>
+        </div>
+        <div class="modal-ajax" >
+          <div class="modal-ajax_forId" id="modal-ajax">
+            <div class="modal-ajax__container">
+              <div class="modal-ajax__content">Сообщения отправлено</div>
+              <div class="modal-ajax__btn-container">
+                <a href="" class="modal-ajax__btn purchase-btn app-submit-btn">Закрыть</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- НАЧАЛО СЕКЦИИ contacts-->
@@ -565,8 +701,15 @@
       </nav>
     </div>
   </section>
+
+  
   <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/slider.js"></script>
   <script src="./js/acco.js"></script>
+  <script src="./js/reviews.js"></script>
+  <script src="./js/modal-ajax.js"></script>
 </body>
 </html>

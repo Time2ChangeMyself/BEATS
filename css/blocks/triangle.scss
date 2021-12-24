@@ -1,0 +1,12 @@
+.triangle {
+  transition: 0.5s;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border:5px solid transparent;
+  border-top-color:red ;
+
+  &_rotated {
+    transform: rotate(180deg);
+  }
+}

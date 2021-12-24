@@ -1,9 +1,12 @@
 .arrow {
   display: block;
   cursor: pointer;
-  width: rem(30px);
-  height: rem(30px);
+  width: rem(50px);
+  height: rem(50px);
   font-size: rem(50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   &_left {
     margin-right: rem(15px);

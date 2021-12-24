@@ -9,6 +9,10 @@
     border-radius: 50%; 
     border: rem(5px) solid transparent;
     overflow: hidden;
+
+    &:hover {
+      border: rem(5px) solid #E01F3D;
+    }
     
     &_active {
       border: rem(5px) solid #E01F3D;
@@ -17,15 +21,12 @@
     
   }
 
-  &__link {
-    // зачем вешать абсолют на ссылку?
-  }
-
   &__image {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 
   }
 
