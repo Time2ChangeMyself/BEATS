@@ -21,6 +21,10 @@
     padding: rem(80px) 0;
     position: relative;
 
+    @include phone {
+      padding: rem(50px) 0;
+    }
+
     &::after {
       content: "";
       position: absolute;

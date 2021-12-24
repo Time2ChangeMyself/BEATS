@@ -18,7 +18,7 @@
     position: absolute;
     top: 47%;
     left: -4%;
-    z-index: 10000;
+    z-index: 98;
 
     @include tablets {
       top: 20%;
@@ -35,18 +35,18 @@
     position: absolute;
     top: 47%;
     right: -4%;
-    z-index: 10000;
+    z-index: 98;
 
     @include tablets {
       top: 20%;
       right: 3%;
-    }
+     }
 
     @include phone {
       right: -7%;
 
-    }
-    }
+     }
+   }
        
     
   }
