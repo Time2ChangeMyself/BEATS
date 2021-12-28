@@ -13,7 +13,7 @@
   <div class="wrapper">
     <div class="wrapper__content">
       <!-- НАЧАЛО СЕКЦИИ HERO-->
-      <section class="hero">
+      <section data-section-id="hero" class="hero section">
         <div class="container hero__container">
           <header class="header">
             <div class="header__right">
@@ -24,13 +24,13 @@
               </a>
               <nav class="menu">
                 <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link" href="">О нас</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Наушники</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Команда</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Цвета</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Отзывы</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Как мы работаем</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Контакты </a></li>
+                  <li class="menu__item"><a data-scroll-to="benefits" class="menu__link" href="#">О нас</a></li>
+                  <li class="menu__item"><a data-scroll-to="products" class="menu__link" href="#">Наушники</a></li>
+                  <li class="menu__item"><a data-scroll-to="team" class="menu__link" href="#">Команда</a></li>
+                  <li class="menu__item"><a data-scroll-to="colors" class="menu__link" href="#">Цвета</a></li>
+                  <li class="menu__item"><a data-scroll-to="reviews" class="menu__link" href="#">Отзывы</a></li>
+                  <li class="menu__item"><a data-scroll-to="work" class="menu__link" href="#">Как мы работаем</a></li>
+                  <li class="menu__item"><a data-scroll-to="location" class="menu__link" href="#">Контакты </a></li>
                 </ul>
               </nav>
             </div>
@@ -45,7 +45,7 @@
           <div class="hero__title-section">
             <h1 class="hero__title-h1 title-h1">Беспроводные наушники Beats Solo&nbsp3</h1>
             <h4 class="hero__subtitle">Встречайте новую версию наушников из линейки Powerbeats.</h4>
-            <a href="#" class="hero__purchase-btn purchase-btn">Заказать</a>
+            <a href="#" data-scroll-to="order" class="hero__purchase-btn purchase-btn">Заказать</a>
           </div>
           <div class="hero__icons-section">
             <ul class="features">
@@ -79,7 +79,7 @@
       </section>
       <!-- КОНЕЦ СЕКЦИИ HERO-->
       <!-- НАЧАЛО СЕКЦИИ BENEFITS-->
-      <section class="benefits-section">
+      <section data-section-id="benefits" class="benefits-section section">
         <div class="container benefits-section__container">
           <div class="headline">
             <h1 class="headline__title-h1 title-h1">почему beats solo&nbsp3?</h1> 
@@ -151,7 +151,7 @@
       </section>
       <!-- КОНЕЦ СЕКЦИИ BENEFITS-->
       <!-- НАЧАЛО СЕКЦИИ product-->
-      <section class="products">
+      <section data-section-id="products" class="products section">
         <div class="container products__container">
           <div class="products__slider">
             <div class="products__arrows">
@@ -229,7 +229,6 @@
                         </li>
                       </ul>
                     </div>
-
                   </div>
                     <div class="product__title-h2 title-h2">beats solo 3. цвет «атласное серебро»</div>
                     <div class="product__desc desc">
@@ -282,49 +281,48 @@
                           <div class="specification__name-wrap">
                             <div class="specification__icon-wrap">
                               <svg class="specification__icon">
-                                <use xlink:href="./img/sprite.svg#specification__icon-1"></use>
+                                <use xlink:href="./img/sprite.svg#specification__icon-2"></use>
                               </svg>
                             </div>
-                            <div class="specification__name">Bluetooth</div>
+                            <div class="specification__name">Дальность </div>
                           </div>
-                          <div class="specification__value">4.0</div>
+                          <div class="specification__value">12.0</div>
                         </li>
                         <li class="specification__item">
                           <div class="specification__name-wrap">
                             <div class="specification__icon-wrap">
                               <svg class="specification__icon">
-                                <use xlink:href="./img/sprite.svg#specification__icon-1"></use>
+                                <use xlink:href="./img/sprite.svg#specification__icon-3"></use>
                               </svg>
                             </div>
-                            <div class="specification__name">Bluetooth</div>
+                            <div class="specification__name">Зарядка</div>
                           </div>
-                          <div class="specification__value">4.0</div>
+                          <div class="specification__value">3 ч</div>
                         </li>
                         <li class="specification__item">
                           <div class="specification__name-wrap">
                             <div class="specification__icon-wrap">
                               <svg class="specification__icon">
-                                <use xlink:href="./img/sprite.svg#specification__icon-1"></use>
+                                <use xlink:href="./img/sprite.svg#specification__icon-4"></use>
                               </svg>
                             </div>
-                            <div class="specification__name">Bluetooth</div>
+                            <div class="specification__name">Вес</div>
                           </div>
-                          <div class="specification__value">4.0</div>
+                          <div class="specification__value">215гр</div>
                         </li>
                         <li class="specification__item">
                           <div class="specification__name-wrap">
                             <div class="specification__icon-wrap">
                               <svg class="specification__icon">
-                                <use xlink:href="./img/sprite.svg#specification__icon-1"></use>
+                                <use xlink:href="./img/sprite.svg#specification__icon-5"></use>
                               </svg>
                             </div>
-                            <div class="specification__name">Bluetooth</div>
+                            <div class="specification__name">Гарантия</div>
                           </div>
-                          <div class="specification__value">4.0</div>
+                          <div class="specification__value">1 год</div>
                         </li>
                       </ul>
                     </div>
-
                   </div>
                     <div class="product__title-h2 title-h2">beats solo 3. цвет «атласное серебро»</div>
                     <div class="product__desc desc">
@@ -356,7 +354,7 @@
       </section>
       <!-- КОНЕЦ СЕКЦИИ product-->
       <!-- НАЧАЛО СЕКЦИИ TEAM-->
-      <section class="team">
+      <section data-section-id="team" class="team section">
         <div class="container team__container">
           <h1 class="title-h1 team__title-h1">команда</h1>
           <ul class="team__list team__list_desktop">
@@ -450,9 +448,45 @@
           </ul>
         </div>
       </section>
+      <!-- НАЧАЛО СЕКЦИИ MENU-->
+      <section data-menu-theme="modified" data-section-id="colors" class="colors-section section">
+        <div class="container colors-section__container">
+          <h1 class="colors-section__title-h1 title-h1 title-h1_white">цвета</h1>
+          <ul class="colors-section__list colors-list">
+            <li class="colors-list__item colors-list__item_silver">
+              <a href="#" class="colors-list__link colors-link colors-list__link_silver">
+                <div class="colors-link__title">«Атласное серебро»</div>
+              </a>
+              <div class="colors-list__content">
+                <div class="colors-list__text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                  Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.</div>
+              </div>
+            </li>
+            <li class="colors-list__item colors-list__item_silver">
+              <a href="#" class="colors-list__link colors-link colors-list__link_black">
+                <div class="colors-link__title">«Атласное серебро»</div>
+              </a>
+              <div class="colors-list__content">
+                <div class="colors-list__text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                  Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.</div>
+              </div>
+            </li>
+            <li class="colors-list__item colors-list__item_silver">
+              <a href="#" class="colors-list__link colors-link colors-list__link_red">
+                <div class="colors-link__title">«Атласное серебро»</div>
+              </a>
+              <div class="colors-list__content">
+                <div class="colors-list__text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                  Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- КОНЕЦ СЕКЦИИ MENU-->
       <!-- КОНЕЦ СЕКЦИИ TEAM-->
       <!-- НАЧАЛО СЕКЦИИ REVIEWS-->
-      <section class="reviews">
+      <section data-section-id="reviews" class="reviews section">
         <div class="reviews__container container">
           <h1 class="reviews__title-h1 title-h1">отзывы</h1>
           <ul class="reviews__list">
@@ -522,7 +556,7 @@
       </section>
       <!-- КОНЕЦ СЕКЦИИ REVIEWS-->
       <!-- НАЧАЛО СЕКЦИИ ORDER-->
-      <section class="order" >
+      <section data-menu-theme="modified" data-section-id="order" class="order section" >
         <div class="container order__container">
           <h1 class=" order__title-h1 title-h1 title-h1_white">закажите доставку</h1>
           <form class="form" action="">
@@ -612,9 +646,10 @@
         </div>
       </section>
       <!-- НАЧАЛО СЕКЦИИ contacts-->
-      <section class="location">
+      <section data-section-id="location" class="location section">
         <div class="container location__container">
-          <img src="./img/map.png" alt="map" class="location__map">
+          <div id="map" class="location__map">
+          </div>
           <footer class="footer"> 
               <div class="container footer__container">
                 <adress class="footer__contacts contacts">
@@ -647,31 +682,28 @@
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item_active">
-        <a href="" class="fixed-menu__link"></a>
+        <a data-scroll-to="hero" href="" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a data-scroll-to="benefits" href="" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a data-scroll-to="products" href="" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a data-scroll-to="team" href="" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a data-scroll-to="colors" href="" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a data-scroll-to="reviews" href="" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a data-scroll-to="work" href="" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a data-scroll-to="location" href="" class="fixed-menu__link"></a>
       </li>
     </ul>
   </nav>
@@ -690,13 +722,13 @@
       </a>
       <nav class="menu modal__menu">
         <ul class="menu__list ">
-          <li class="menu__item"><a class="menu__link" href="">О нас</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Наушники</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Цвета</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Как мы работаем</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Контакты </a></li>
+          <li class="menu__item"><a data-scroll-to="benefits" class="menu__link" href="">О нас</a></li>
+          <li class="menu__item"><a data-scroll-to="products" class="menu__link" href="#">Наушники</a></li>
+          <li class="menu__item"><a data-scroll-to="team" class="menu__link" href="#">Команда</a></li>
+          <li class="menu__item"><a data-scroll-to="colors" class="menu__link" href="#">Цвета</a></li>
+          <li class="menu__item"><a data-scroll-to="reviews" class="menu__link" href="#">Отзывы</a></li>
+          <li class="menu__item"><a data-scroll-to="work" class="menu__link" href="#">Как мы работаем</a></li>
+          <li class="menu__item"><a data-scroll-to="location" class="menu__link" href="#">Контакты </a></li>
         </ul>
       </nav>
     </div>
@@ -709,7 +741,12 @@
   <script src="./js/index.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/acco.js"></script>
+  <script src="./js/colors.js"></script>
   <script src="./js/reviews.js"></script>
   <script src="./js/modal-ajax.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="./js/location.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="./js/ops.js"></script>
 </body>
 </html>

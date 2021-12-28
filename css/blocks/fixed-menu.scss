@@ -10,6 +10,15 @@
 
   &__item {
     margin-bottom: rem(5px);
+    &:hover {
+      .fixed-menu__link {
+        border-color:red;
+
+        &::before {
+          background: red;
+        }
+      }
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -48,4 +57,38 @@
       transform: translate(-50%,-50%);
     }
   }
+
+  &_modified {
+    .fixed-menu {
+      &__item {
+        &:hover {
+          .fixed-menu__link {
+            border-color:rgb(252, 128, 196);
+    
+            &::before {
+              background: rgb(252, 128, 196);
+            }
+          }
+        }
+
+        &_active {
+
+          .fixed-menu__link {
+            border-color:rgb(252, 128, 196);
+    
+            &::before {
+              background: rgb(252, 128, 196);
+            }
+          }
+        }
+      }
+
+      &__link {
+        &::before {
+          background: rgb(137, 250, 244);
+        }
+      }
+    }
+  }
 }
+

@@ -50,6 +50,8 @@ $('.form').submit(e => {
 
     requset.done(data => {
       modalContent.text(data.message);
+      let form = document.querySelector(".form").reset();
+      // $("form")[0].reset();
     });
 
     requset.fail(data => {
@@ -67,9 +69,6 @@ $('.form').submit(e => {
   }
 
 
-  
-
-  
 
 });
 
@@ -78,3 +77,4 @@ $(".app-submit-btn").on("click", e => {
 
   $.fancybox.close();
 })
+

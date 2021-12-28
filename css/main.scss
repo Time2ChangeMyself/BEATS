@@ -52,7 +52,23 @@ $phone:480px;
 @import './blocks/title-h2.scss';
 @import './blocks/modal.scss';
 @import './blocks/team.scss';
+@import './blocks/colors-section.scss';
 @import './blocks/triangle.scss';
 @import './blocks/modal-ajax.scss';
 @import './blocks/footer.scss';
 @import './blocks/fixed-menu.scss';
+
+// * {
+//   outline: 1px solid red;
+//   }
+
+//  ::-webkit-scrollbar {
+//   width: 0;
+//    height: 0;
+// }
+
+
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}

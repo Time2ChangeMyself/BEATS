@@ -1,0 +1,107 @@
+.colors-section {
+    min-height: rem(650px);
+    background: url('../img/menu__bg.jpg') no-repeat center center / cover;
+    position: relative;
+  
+    @include tablets{
+    min-height: rem(1000px); 
+    }
+
+    @include phone {
+    min-height: rem(900px);
+    }
+
+    &__container {
+      height: 100%;
+      display: flex;
+      width: 100%;
+    }
+
+    &__title-h1 {
+      padding: rem(84px) rem(115px);
+
+      @include tablets {
+        padding: rem(60px) rem(25px);  
+      }
+
+      @include phone {
+        padding: rem(50px) rem(40px);  
+      }
+    }
+
+    &__list {
+      position: absolute;
+      top:0;
+      right: 0;
+      bottom: 0;
+      transition: 0.5s;
+    }
+}
+
+.colors-list {
+    display: flex;
+
+    &__item {
+        
+        height: 100%;
+        display: flex;
+        left:0;
+        transition-property: left, z-index;
+        transition-duration: 0.5s, 0s;
+
+      
+    }
+
+    &__link {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(100px);
+        transition: 0.5s;
+
+        &_red {
+            background: #E01F3C;
+            
+        }
+
+        &_black {
+            background: black;
+        }
+
+        &_silver {
+            background: silver;
+        }
+        
+    }
+
+    &__content {
+        
+        background: rgba(51, 53, 55, 0.9);
+        width: 0;
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+        transition: 0.5s;
+
+    }
+
+    &__text {
+        padding: rem(30px);
+        font-size: rem(16px);
+        font-family: $baseFontFamily;
+        color: white;
+    }
+}
+
+.colors-link__title {
+    font-family: $baseFontFamily;
+    font-size: rem(36px);
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    
+
+}

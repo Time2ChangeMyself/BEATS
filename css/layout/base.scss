@@ -68,12 +68,19 @@ img {
 
 .wrapper {
   overflow: hidden;
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .wrapper__content {
-  flex: 1;
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
+}
+
+.section {
+  // height: 100vh;
+  height: 100%;
 }
