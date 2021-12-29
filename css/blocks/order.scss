@@ -3,14 +3,7 @@
   background: #181818;
   position: relative;
 
-  @include tablets {
-    min-height: rem(1000px);
-  }
-
-
-  @include phone {
-    min-height: rem(900px);
-  }
+  
   
   &__container {
     display: flex;

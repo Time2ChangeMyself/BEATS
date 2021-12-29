@@ -3,13 +3,7 @@
     background: url('../img/menu__bg.jpg') no-repeat center center / cover;
     position: relative;
   
-    @include tablets{
-    min-height: rem(1000px); 
-    }
-
-    @include phone {
-    min-height: rem(900px);
-    }
+    
 
     &__container {
       height: 100%;

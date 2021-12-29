@@ -555,6 +555,35 @@
         </div>
       </section>
       <!-- КОНЕЦ СЕКЦИИ REVIEWS-->
+
+      <section data-section-id="work" class="work section">
+        <div class="container work__container">
+          <h1 class="work__title-h1 title-h1">как мы работаем</h1>
+          <div class="work__video-wrap">
+            <video class="work__video">
+              <source src= "./video/Sony Noise Cancelling Headphones WH-1000XM4 Official Product Video (1).mp4" type="video/mp4"> 
+              <source src= "./video/videoplayback.webm" type="video/webm"> 
+            </video>
+            <div class="controls">
+              <div class="controls__btn-wrap">
+                <button class="controls__btn pause" id="play-pause"></button>
+              </div>
+              <div class="controls__full-bar">
+                <div class="controls__current-bar"></div>
+                <div class="controls__dot"></div>
+              </div>
+              <div class="controls__volume">
+                <div class="controls__volume-icon"></div>
+                <div class="controls__volume-full-bar">
+                  <div class="controls__volume-current-bar"></div>
+                  <div class="controls__dot-volume"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <!-- НАЧАЛО СЕКЦИИ ORDER-->
       <section data-menu-theme="modified" data-section-id="order" class="order section" >
         <div class="container order__container">
@@ -645,6 +674,7 @@
           </div>
         </div>
       </section>
+     
       <!-- НАЧАЛО СЕКЦИИ contacts-->
       <section data-section-id="location" class="location section">
         <div class="container location__container">
@@ -703,6 +733,9 @@
         <a data-scroll-to="work" href="" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
+        <a data-scroll-to="order" href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
         <a data-scroll-to="location" href="" class="fixed-menu__link"></a>
       </li>
     </ul>
@@ -743,10 +776,12 @@
   <script src="./js/acco.js"></script>
   <script src="./js/colors.js"></script>
   <script src="./js/reviews.js"></script>
+  <script src="./js/videoControls.js"></script>
   <script src="./js/modal-ajax.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="./js/location.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
   <script src="./js/ops.js"></script>
 </body>
 </html>

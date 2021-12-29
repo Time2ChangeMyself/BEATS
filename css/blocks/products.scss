@@ -3,13 +3,7 @@
   background: #F8FAF9;
   
 
-  @include tablets{
-    min-height: rem(1000px); 
-  }
-
-  @include phone {
-    min-height: rem(900px);
-  }
+ 
 
   &__arrow {
 

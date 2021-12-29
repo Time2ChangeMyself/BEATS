@@ -3,14 +3,7 @@
   color: $black;
   background-color: $background-color;
 
-   @include tablets{
-     min-height: rem(1000px); 
-   }
-
-   @include phone {
-     min-height: rem(900px);
-   }
-  
+    
   &__container {
     height: 100%;
     position: relative;
@@ -68,6 +61,7 @@
         content: "";
         margin-bottom: rem(60px);
         background: url('../img/main-bg-768.png') center center / contain no-repeat;
+        flex:1;
       }
     }
     

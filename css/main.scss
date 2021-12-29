@@ -37,6 +37,8 @@ $phone:480px;
 @import './blocks/reviews.scss';
 @import './blocks/reviews-switcher.scss';
 @import './blocks/review.scss';
+@import './blocks/work.scss';
+@import './blocks/controls.scss';
 @import './blocks/title-h4.scss';
 @import './blocks/order.scss';
 @import './blocks/form.scss';
@@ -62,13 +64,16 @@ $phone:480px;
 //   outline: 1px solid red;
 //   }
 
-//  ::-webkit-scrollbar {
-//   width: 0;
+// ::-webkit-scrollbar {
+//    width: 0;
 //    height: 0;
+//  }
+
+
+// * {
+//   -ms-overflow-style: none;  /* IE and Edge */
+//   scrollbar-width: none;
 // }
 
 
-* {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;
-}
+

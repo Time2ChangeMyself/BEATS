@@ -1,30 +1,36 @@
 const body = document.body;
-const modalWindow = document.querySelector('.modal');
+const modalWindow = $('.modal');
 const closeBtn = document.querySelector('.modal__close');
 const humburgerMenu = document.querySelector('.humburger');
-const menuLink = document.querySelectorAll('.menu__link')
+const menuLink = modalWindow.find('.menu__link');
 
 humburgerMenu.addEventListener('click', e => {
   e.preventDefault();
-  modalWindow.style.display = "block";
+  modalWindow.css({
+    'display' : 'block'
+  });
   body.style.overflow = "hidden";
 });
 
 closeBtn.addEventListener('click', e => {
   e.preventDefault();
-  modalWindow.style.display = "none";
-  body.style.overflow = "scroll";
+  modalWindow.css({
+    'display' : 'none'
+  });
+  // body.style.overflow = "scroll";
 });
 
 
 
-menuLink.forEach((item) =>  {
-  item.addEventListener('click', e => {
+ menuLink.on('click', e => {
+    e.preventDefault();
+    modalWindow.css({
+    'display' : 'none'
+  });
+ }) 
+  
     
-    modalWindow.style.display = "none";
-    body.style.overflow = "scroll";
     
-  })
-});
+    
 
 

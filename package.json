@@ -1,0 +1,26 @@
+{
+  "name": "beats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Time2ChangeMyself/BEATS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Time2ChangeMyself/BEATS/issues"
+  },
+  "homepage": "https://github.com/Time2ChangeMyself/BEATS#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.45.1"
+  }
+}

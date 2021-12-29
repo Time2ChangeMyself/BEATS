@@ -72,6 +72,23 @@ img {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  .section {
+    // height: 100vh;
+    height: 100%;
+    // overflow: hidden;
+  
+    @include tablets{
+  
+      //  min-height: none; 
+       min-height: rem(1000px); 
+    }
+  
+    @include phone {
+      //  min-height: none;
+       min-height: rem(900px);
+    }
+  }
 }
 
 .wrapper__content {
@@ -80,7 +97,3 @@ img {
   will-change: transform;
 }
 
-.section {
-  // height: 100vh;
-  height: 100%;
-}

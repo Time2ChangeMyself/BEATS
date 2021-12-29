@@ -4,13 +4,7 @@
   display: flex;
   align-items: center;
 
-  @include tablets {
-    min-height: rem(1000px);
-  }
-
-  @include phone {
-    min-height: rem(900px);
-  }
+  
 
   &__container {
     display: flex;
@@ -21,6 +15,10 @@
 
   &__title-h1 {
     margin-bottom: rem(53px);
+
+    @include phone{
+      margin-bottom: rem(16px);
+    }
   }
 
   &__list {
